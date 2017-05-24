@@ -1,0 +1,214 @@
+$ProximaNova: 'Proxima Nova', sans-serif
+
+*
+    font-family: $ProximaNova
+
+@import "fonts"
+@import "icons"
+
+
+
+// --- START of PAGES
+
+// SALES PAGE
+@import "pages/sale/black-bar"
+@import "pages/sale/header"
+@import "pages/sale/develop"
+@import "pages/sale/phase"
+@import "pages/sale/teaching"
+@import "pages/sale/assignments"
+@import "pages/sale/facebook-feed"
+@import "pages/sale/money-back"
+@import "pages/sale/breakdowns"
+@import "pages/sale/plans"
+@import "pages/sale/faq"
+
+// TEST PAGE
+@import "pages/test/main"
+
+// GETTING STARTED PAGE
+@import "pages/getting-started/main"
+
+// ERROR PAGE
+@import "pages/error/main"
+
+// END of PAGES ---
+
+
+// --- START of Miscellaneous styles
+
+// Modal content includes all the texts, buttons, answers, questions and other things that are in the modal.
+@import "modals/modal-content"
+
+// All the headers and footers
+@import "headers"
+@import "footers"
+
+// Navigation
+@import "navigation"
+
+// END of Miscellaneous styles ---
+
+
+
+// --- START of Responsiveness
+
+// HEADERS
+@import "responsiveness/headers/screen-mobile"
+
+// FOOTERS
+@import "responsiveness/footers/screen-medium"
+@import "responsiveness/footers/screen-small"
+@import "responsiveness/footers/screen-mobile"
+
+// NAVIGATION
+@import "responsiveness/navigation/screen-mobile"
+
+// --------------------------- START of SALES PAGE --------------------------- \\
+
+// BLACK-BAR SECTION
+@import "responsiveness/pages/sales/black-bar/screen-mobile"
+
+// INTRODUCTION SECTION
+@import "responsiveness/pages/sales/introduction/screen-medium"
+@import "responsiveness/pages/sales/introduction/screen-small"
+@import "responsiveness/pages/sales/introduction/screen-mobile"
+
+// PHASE SECTION
+@import "responsiveness/pages/sales/phase/screen-medium"
+@import "responsiveness/pages/sales/phase/screen-small"
+@import "responsiveness/pages/sales/phase/screen-mobile"
+
+// BREAKDOWNS SECTION
+@import "responsiveness/pages/sales/breakdowns/screen-medium"
+@import "responsiveness/pages/sales/breakdowns/screen-small"
+@import "responsiveness/pages/sales/breakdowns/screen-mobile"
+
+// PLANS SECTION
+@import "responsiveness/pages/sales/plans/screen-medium"
+@import "responsiveness/pages/sales/plans/screen-small"
+@import "responsiveness/pages/sales/plans/screen-mobile"
+
+// FAQ SECTION
+@import "responsiveness/pages/sales/faq/screen-medium"
+@import "responsiveness/pages/sales/faq/screen-small"
+@import "responsiveness/pages/sales/faq/screen-mobile"
+
+// ASSIGNMENTS SECTION
+@import "responsiveness/pages/sales/assignments/screen-medium"
+@import "responsiveness/pages/sales/assignments/screen-small"
+@import "responsiveness/pages/sales/assignments/screen-mobile"
+
+// MONEY-BACK SECTIONS
+@import "responsiveness/pages/sales/money-back/screen-medium"
+@import "responsiveness/pages/sales/money-back/screen-small"
+@import "responsiveness/pages/sales/money-back/screen-mobile"
+
+// TEACHING SECTIONS
+@import "responsiveness/pages/sales/teaching/screen-medium"
+@import "responsiveness/pages/sales/teaching/screen-small"
+@import "responsiveness/pages/sales/teaching/screen-mobile"
+
+// DEVELOP SECTIONS
+@import "responsiveness/pages/sales/develop/screen-small"
+@import "responsiveness/pages/sales/develop/screen-mobile"
+
+// FACEBOOK-FEED SECTIONS
+@import "responsiveness/pages/sales/facebook-feed/screen-small"
+@import "responsiveness/pages/sales/facebook-feed/screen-mobile"
+
+// --------------------------- END of SALES PAGE --------------------------- \\
+
+// TEST MAIN SECTION
+@import "responsiveness/pages/test/screen-small"
+@import "responsiveness/pages/test/screen-mobile"
+
+// GETTING STARTED PAGE
+@import "responsiveness/pages/getting-started/screen-medium"
+@import "responsiveness/pages/getting-started/screen-small"
+@import "responsiveness/pages/getting-started/screen-mobile"
+
+// ERROR PAGE
+@import "responsiveness/pages/error/screen-mobile"
+
+// MODALS
+@import "responsiveness/modals/screen-mobile"
+
+
+// --- END of Responsiveness
+
+body
+    overflow-x: hidden
+
+
+h1.heading-main
+    font-size: 45px
+    font-weight: 900
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: -0.9px
+    color: black
+    margin: 0
+
+p.heading-description
+    font-size: 22px
+    font-weight: 300
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.32
+    letter-spacing: normal
+    color: #727272
+    margin: 0
+    padding: 0 15%
+
+
+section.modals
+    height: 100vh
+    width: 100%
+
+    .container
+        max-width: 515px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+
+        .buttons
+            text-align: center
+            width: 100%
+            align-self: center
+
+            button.answer
+                background-color: white
+                border: solid 1px #e4e4e4
+                height: 80px
+                line-height: 1.06
+                color: black
+                font-size: 17px
+                font-weight: 600
+                display: block
+                width: 100%
+                box-shadow: none
+                margin-top: 8px
+                transition: all 0.15s ease-in
+
+                &:hover
+                    box-shadow: 0 2px 4px 0 rgba(180, 180, 180, 0.5)
+                    background-color: #f5f5f5
+
+
+@media screen and (max-width: 1199px)
+    .pictures img:not(.front-image)
+            display: none
+
+@media screen and (max-width: 991px)
+    .pictures
+        margin: 0 auto !important
+
+        img.front-image
+                position: relative !important
+                left: 0 !important
+                top: 0 !important
+                display: block
+                margin: 0 auto
